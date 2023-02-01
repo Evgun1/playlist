@@ -1,0 +1,22 @@
+@import url(./blocks/sidenav.css);
+@import url(./blocks/header.css);
+@import url(./blocks/main.css);
+@import url(./blocks/section-content.css);
+@import url(./blocks/songs.css);
+
+.app-container{
+    display: flex;
+}
+
+.hero{
+    width: 100%;
+}
+
+.songs-container{
+    /* height: min(100%); */
+    width: 100%;
+    /* max-width: 1160px; */
+    padding: 0 35px 0 25px;
+
+}
+

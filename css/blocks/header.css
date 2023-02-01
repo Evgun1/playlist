@@ -1,0 +1,29 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    height: 52px;
+    background: #F4F4F4;
+}
+
+.header span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 500px;
+}
+
+.header a {
+    display: flex;
+    text-align: inherit;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    height: 21px;
+    width: 47px;
+    margin: 0;
+    padding: 0;
+}
