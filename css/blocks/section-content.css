@@ -69,6 +69,9 @@
     gap: 10px;
 }
 
+/**
+TODO: ду ховер ефект кнопки?
+ */
 .primary-actions button {
     display: flex;
     align-items: center;
