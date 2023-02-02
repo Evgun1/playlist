@@ -69,9 +69,6 @@
     gap: 10px;
 }
 
-/**
-TODO: ду ховер ефект кнопки?
- */
 .primary-actions button {
     display: flex;
     align-items: center;
@@ -86,6 +83,11 @@ TODO: ду ховер ефект кнопки?
     font-size: 14px;
     line-height: 120%;
     color: #FFFFFF;
+    cursor: pointer;
+}
+
+.primary-actions button:hover{
+    background: #F8C869;
 }
 
 .section-actions {
@@ -102,5 +104,9 @@ TODO: ду ховер ефект кнопки?
     justify-content: center;
     border-radius: 100%;
     background: rgba(248, 200, 78, 0.05);
-    border: none;   
+    border: none;
+    cursor: pointer;
+}
+.section-actions button:hover{
+    background: rgba(248, 200, 78, 0.1)
 }

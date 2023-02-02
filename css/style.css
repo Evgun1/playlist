@@ -4,13 +4,6 @@
 @import url(./blocks/section-content.css);
 @import url(./blocks/songs.css);
 
-
-/**
-TODO: курва мать, де ховери на кнопках???
-https://developer.mozilla.org/ru/docs/Web/CSS/:hover
-https://developer.mozilla.org/ru/docs/Web/CSS/cursor
- */
-
 .app-container{
     display: flex;
 }

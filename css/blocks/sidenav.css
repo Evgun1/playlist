@@ -6,16 +6,28 @@
     height: 100vh; 
     padding: 62px 11px 0 11px;
     background: #DFDEDB;
+    display: block;
+    transition-duration: .5s;
+    margin-left: 0;
 }
 
-/**
-TODO: чутка поле вводу ровалене
- */
+.sidenav__action{
+    width: 100%;
+    max-width: 220px;
+    height: 100vh; 
+    padding: 62px 11px 0 11px;
+    background: #DFDEDB;
+    display: block;
+    transition-duration: .5s;
+    margin-left: -218px;
+}
+
 .sidenav__input {
     margin-bottom: 33px;
 }
 
 .sidenav__input input {
+    width: 100%;
     background: #D3D1CD;
     border: 0.5px solid #C8C6C4;
     border-radius: 6px;

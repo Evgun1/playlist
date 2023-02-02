@@ -30,11 +30,15 @@
     color: #000000;
 }
 
-.song-item__row-artist span {
+.song-item__row-artist a {
     margin-left: 19px;
     font-weight: 400;
     font-size: 12px;
     line-height: 100%;
+    color: #7E7E7E;
+}
+
+.song-item__row-artist a:hover {
     color: #7E7E7E;
 }
 
@@ -43,6 +47,10 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 100%;
+    color: #7E7E7E;
+}
+
+.songs-item__row-album:hover {
     color: #7E7E7E;
 }
 
@@ -60,4 +68,12 @@
     font-size: 12px;
     line-height: 100%;
     color: #7E7E7E;
+}
+
+.songs-item__row-wraper:hover {
+    background: hsl(0, 0%, 94.04%);
+}
+
+.songs-item__row-wraper-baground {
+    background: hsl(0, 0%, 98.04%);
 }
