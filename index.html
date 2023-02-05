@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/library/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
+
 </head>
 
 <body>
@@ -287,7 +288,7 @@
                                 Championships
                             </a>
                             <div class="songs-item__row-duration">
-                                <button>
+                                <button class='songs-item__row-btn'>
                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -318,7 +319,7 @@
                                 HIGHEST IN THE ROOM – Single
                             </a>
                             <div class="songs-item__row-duration">
-                                <button>
+                                <button class='songs-item__row-btn'>
                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -349,7 +350,7 @@
                                 TESTING
                             </a>
                             <div class="songs-item__row-duration">
-                                <button>
+                                <button class='songs-item__row-btn'>
                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -380,7 +381,7 @@
                                 Taste (feat. Offset) – Single
                             </a>
                             <div class="songs-item__row-duration">
-                                <button>
+                                <button class='songs-item__row-btn'>
                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -411,7 +412,7 @@
                                 Wow. – Single
                             </a>
                             <div class="songs-item__row-duration">
-                                <button>
+                                <button class='songs-item__row-btn'>
                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -442,7 +443,7 @@
                                 Fetty Wap (Deluxe Edition)
                             </a>
                             <div class="songs-item__row-duration">
-                                <button>
+                                <button class='songs-item__row-btn'>
                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -473,7 +474,7 @@
                                 Funky Friday – Single
                             </a>
                             <div class="songs-item__row-duration">
-                                <button>
+                                <button class='songs-item__row-btn'>
                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -492,7 +493,42 @@
     <footer>
 
     </footer>
-    <script src="js/app.js"></script>
+
+    <script type="text/template" id="song-item">
+        <li class="songs-item__row">
+            <div class="songs-item__row-wraper songs-item__row-wraper-baground">
+                <div class="songs-item__row-song">
+                    <img src="{{songImageUrl}}" alt="{{songImageAlt}}">
+                    <span>{{songName}}</span>
+                </div>
+                <div class="song-item__row-artist">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.77832 9.97656H7.70117C8.72656 9.97656 9.23438 9.46875 9.23438 8.46289V2.50098C9.23438 1.49512 8.72656 0.987305 7.70117 0.987305H1.77832C0.757812 0.987305 0.245117 1.49023 0.245117 2.50098V8.46289C0.245117 9.47363 0.757812 9.97656 1.77832 9.97656ZM3.58496 7.7207C3.32129 7.7207 3.18945 7.54004 3.18945 7.2666V3.58984C3.18945 3.31641 3.32129 3.13574 3.58496 3.13574H5.96777C6.16309 3.13574 6.2998 3.25293 6.2998 3.46289C6.2998 3.66309 6.16309 3.79492 5.96777 3.79492H3.99512V5.0791H5.83594C6.03125 5.0791 6.16797 5.19141 6.16797 5.40137C6.16797 5.59668 6.03125 5.70898 5.83594 5.70898H3.99512V7.06152H5.96777C6.16309 7.06152 6.2998 7.18359 6.2998 7.39355C6.2998 7.59375 6.16309 7.7207 5.96777 7.7207H3.58496Z"
+                            fill="#87888C" />
+                    </svg>
+                    <a href="">{{artistName}}</a>
+                </div>
+                <a href="" class="songs-item__row-album">
+                    {{albumName}}
+                </a>
+                <div class="songs-item__row-duration">
+                    <button class='songs-item__row-btn'>
+                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.8418 7.68604H6.10449V11.9487C6.10449 12.4834 6.54395 12.9229 7.07861 12.9229C7.61328 12.9229 8.05273 12.4834 8.05273 11.9487V7.68604H12.3154C12.8501 7.68604 13.2896 7.25391 13.2896 6.71191C13.2896 6.17725 12.8501 5.73779 12.3154 5.73779H8.05273V1.4751C8.05273 0.94043 7.61328 0.500977 7.07861 0.500977C6.54395 0.500977 6.10449 0.94043 6.10449 1.4751V5.73779H1.8418C1.30713 5.73779 0.867676 6.17725 0.867676 6.71191C0.867676 7.25391 1.30713 7.68604 1.8418 7.68604Z"
+                                fill="#F8C84E" />
+                        </svg>
+                    </button>
+                    <span>{{songDuration}}</span>
+                </div>
+            </div>
+        </li>
+    </script>
+
 </body>
+<script src="js/app.js"></script>
 
 </html>
